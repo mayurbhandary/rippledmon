@@ -6,5 +6,7 @@ services:
       [80:80,8125:8125/udp]
   grafana:
     image: grafana/grafana
+    volumes:
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
     ports:
       [3000:3000]

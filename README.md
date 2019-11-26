@@ -23,7 +23,7 @@ prefix=my_rippled
 
 This will enable insights on your rippled server and send metrics via UDP to a statsd server listening on port 8125 on your localhost. The metrics will be prefixed with 'my_rippled' 
 
-2. Clone this repo and start the docker containers
+2. Clone this repo and start the docker containers with docker-compose
 
 ```
 $ git clone https://github.com/mayurbhandary/rippledmon.git

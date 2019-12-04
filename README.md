@@ -42,7 +42,6 @@ In your browser go to http://localhost:3000
 
 The default username and password are 'admin'
 
-# Current Metrics
 
 
 

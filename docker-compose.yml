@@ -2,9 +2,6 @@ version: '3'
 services:
   statsd-graphite:
     image: graphiteapp/graphite-statsd
-    volumes:
-      - ./graphite/conf/:/opt/graphite/conf
-      - ./statsd/conf/:/opt/statsd/config
     ports:
       [80:80,8126:8126,8125:8125/udp]
     

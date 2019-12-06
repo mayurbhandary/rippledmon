@@ -40,8 +40,47 @@ In your browser go to http://localhost:3000
 ```
 ![Login](Login.png)
 
-The default username and password are 'admin'
+The default username and password are 'admin'. Dashboard 1 is an example displaying a few of the metrics exported from rippled. It can take a few minutes for these metrics to populate so be patient. 
 
+
+# Metrics
+
+Metrics will be added to rippled over time and new dashboards will be added to this repo. These are the metrics that are currently visible: 
+
+| Timer Metric Tags |
+|----------|
+| jobq.untrustedProposal | 
+| jobq.trustedProposal |
+| jobq.untrustedValidation |
+| jobq.trustedValidation |
+| jobq.heartbeat | 
+| jobq.ledgerRequest |  
+| jobq.acceptLedger |
+| jobq.advanceLedger |
+| jobq.clientCommand |
+| jobq.ledgerData |
+| jobq.transaction | 
+| jobq.fetchTxnData | 
+| jobq.ledgerData |
+| jobq.writeObjects |
+| jobq.batch |
+| jobq.sweep |
+| jobq.clientCommand |
+| jobq.clusterReport |
+
+Timers with the jobq tag report the amount of time it took to execute the job in ms. You will also see the metrics above with an "_q" suffix. The corresponding "_q" metrics report the amount of time it took to dequeue the job. 
+
+| Counter Metric Tags |Description|
+|---------------------|:---------:|
+| ledger_fetches | Number of ledger fetches in the last collection interval|
+| jobq.job_count | Number of jobs in the job queue |
+| full_below.size | Size of the [FullBelowCache](https://github.com/ripple/rippled/blob/develop/src/ripple/shamap/FullBelowCache.h)
+| full_below.hit_rate | Hit Rate of the [FullBelowCache](https://github.com/ripple/rippled/blob/develop/src/ripple/shamap/FullBelowCache.h) 
+
+
+
+
+    
 
 
 

@@ -21,6 +21,7 @@ $ git clone https://github.com/mayurbhandary/rippledmon.git
 $ cd rippledmon
 $ docker-compose up
 ```
+Note: you can use the -d flag in the docker-compose command to run it in the background.
 
 2. Add the [insight] stanza to your rippled.cfg file, and restart your rippled server.
 
@@ -42,6 +43,17 @@ In your browser go to http://localhost:3000
 
 The default username and password are 'admin'. Dashboard 1 is an example displaying a few of the metrics exported from rippled. It can take a few minutes for these metrics to populate so be patient. 
 
+4. Make new dashboards
+
+You can make new dashboards with the specific metrics that you want by selecting the plus icon and choosing "Add Query" in the New Panel. 
+
+![Add Dashboard](New_Dashboard.png)
+
+Choose the appropriate tags to query the metric you want and adjust the graphing parameters.
+
+![New Query](New_Query.png)
+
+For more information on how to use Grafana see [here](https://grafana.com/docs/grafana/latest/guides/getting_started/).
 
 # Metrics
 

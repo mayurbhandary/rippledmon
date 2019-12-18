@@ -89,6 +89,10 @@ Timers with the jobq tag report the amount of time it took to execute the job in
 | full_below.size | Size of the [FullBelowCache](https://github.com/ripple/rippled/blob/develop/src/ripple/shamap/FullBelowCache.h)
 | full_below.hit_rate | Hit Rate of the [FullBelowCache](https://github.com/ripple/rippled/blob/develop/src/ripple/shamap/FullBelowCache.h) 
 
+## Acknowledgements:
+Inspired by [lndmon](https://github.com/lightninglabs/lndmon)  
+Uses [graphite-project](https://github.com/graphite-project/docker-graphite-statsd) and [Grafana](https://github.com/grafana/grafana)
+
 
 
 

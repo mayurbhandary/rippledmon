@@ -32,7 +32,7 @@ address=127.0.0.1:8125
 prefix=my_rippled
 ```
 
-This will enable insights on your rippled server and send metrics via UDP to a statsd server listening on port 8125 of your localhost. The metrics will be prefixed with 'my_rippled'
+This will enable insights on your rippled server and send metrics via UDP to a statsd server listening on port 8125 of your localhost. The metrics will be prefixed with 'my_rippled'. **NOTE: If you are using this tool to monitor a production grade validator, you should run it on a separate machine and change the address above** 
 
 3. Login to Grafana and view dashboards
 
